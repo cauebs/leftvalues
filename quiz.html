@@ -117,15 +117,6 @@
             for (let questionCount = 0; questionCount < Object.size(questions); questionCount++) {
                 qn.push(questionCount)
             }
-            // Shuffle qn
-            for (let currentIndex = Object.size(questions) - 1; currentIndex > 0; currentIndex--) {
-                randomIndex = Math.floor(Math.random() * currentIndex)
-                
-                // Swap question order
-                let temp = qn[currentIndex]
-                qn[currentIndex] = qn[randomIndex]
-                qn[randomIndex] = temp
-            }
         }
 
         function results () {
